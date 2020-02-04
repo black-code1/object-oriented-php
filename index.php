@@ -10,7 +10,7 @@ class User
 $userOne = new User();
 $userTwo = new User();
 
-echo 'the class is ' . get_class($userTwo);
+echo 'the class is ' . get_class($userOne);
 
 ?>
 
