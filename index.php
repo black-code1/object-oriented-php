@@ -4,7 +4,7 @@ class User
 {
 
   public $username;
-  private $email;
+  protected $email;
   public $role = 'member';
 
   public function __construct($username, $email)
@@ -43,11 +43,13 @@ class AdminUser extends User
 {
   public $level;
   public $role = 'admin';
+  // public $email;
 
   public function __construct($username, $email, $level)
   {
     $this->level = $level;
     parent::__construct($username, $email);
+    // $this->email = $email;
   }
 
   public function message()
